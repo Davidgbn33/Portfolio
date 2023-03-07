@@ -28,7 +28,10 @@ img {
 
 .container {
     display: grid;
-    grid: "header header" 200px "aside main" 1fr/300px 1fr;
+    grid :
+            "header header" 180px
+            "aside main" 1fr
+            /300px 1fr;
     max-height: 100vh;
 }
 
@@ -58,19 +61,21 @@ aside ul {
     display: flex;
     flex-direction: column;
     margin-left: 6rem;
+    margin-top: 7rem;
 }
 
 aside ul a {
     display: flex;
-    justify-content: center;
-    font-size: 2rem;
+    justify-content: start;
+    font-size: 3rem;
     margin: 1rem 0;
 }
 
 aside ul .btn {
-    margin: 1rem 6rem;
+    padding-left: 1rem;
+    margin: 1rem 13rem 1rem -1rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 
 aside ul .btn:hover {
@@ -86,7 +91,7 @@ aside ul .btn:hover {
 .main-container {
     grid-area: main;
     display: flex;
-    padding: 15rem 0;
+    padding: 15rem 0 12rem 0;
 }
 
 .main-container .card {
@@ -97,12 +102,12 @@ aside ul .btn:hover {
     display: flex;
     width: 870px;
     justify-content: space-around;
-    animation: myAnim 4s ease 0s 1 normal forwards;
+    animation: myAnim 3s ease 0s 1 normal forwards;
 }
 
 .main-container .card h2 {
     display: flex;
-    margin: 1rem auto 1rem Auto;
+    margin: 1rem auto 2rem Auto;
     font-size: 3rem;
     justify-content: center;
     border-bottom: 1px solid var(--text);
@@ -202,9 +207,13 @@ aside ul .btn:hover {
     margin: 0.5rem 0;
 }
 
-.main-container .card .card-exp .exp-container input {
+.main-container .card .card-exp .exp-container a {
     cursor: pointer;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 2px;
 }
+
 
 .main-container .card .card-projet {
     display: flex;
