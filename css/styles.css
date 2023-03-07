@@ -25,6 +25,7 @@ img {
 }
 
 /*container du body*/
+
 .container {
   display: grid;
   grid: "header header" 200px "aside main" 1fr/300px 1fr;
@@ -32,6 +33,7 @@ img {
 }
 
 /*header*/
+
 header {
   grid-area: header;
   display: grid;
@@ -46,19 +48,33 @@ header h1 {
 }
 
 /*aside*/
+
 aside {
   grid-area: aside;
 }
 aside ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-left: 6rem;
 }
 aside ul a {
+  display: flex;
+  justify-content: center;
   font-size: 2rem;
   margin: 1rem 0;
 }
+aside ul .btn{
+  margin: 1rem 6rem;
+  display: flex;
+  justify-content: center;
+}
+aside ul .btn:hover{
+  border: 1px solid var(--btn-border);
+  border-radius: 5px;
+  background: var(--btn-background-hover);
+  color: var(--text-hover);
+}
+
 
 /* main */
 
@@ -75,7 +91,7 @@ aside ul a {
   display: flex;
   width: 870px;
   justify-content: space-around;
-  animation: myAnim 1s ease 0s 1 normal forwards;
+  animation: myAnim 4s ease 0s 1 normal forwards;
 }
 .main-container .card h2 {
   display: flex;
@@ -175,7 +191,7 @@ aside ul a {
 @keyframes myAnim {
   0% {
     opacity: 0;
-    transform: translateX(250px);
+    transform: translateX(500px);
   }
   100% {
     opacity: 1;
