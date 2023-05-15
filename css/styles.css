@@ -15,6 +15,9 @@ body {
     min-height: 100vh;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    cursor: default;
+}
 a {
     color: var(--text);
     text-decoration: none;
@@ -49,6 +52,16 @@ header h1 {
     padding: 6rem 0;
     color: var(--text);
     text-shadow: var(--text-shadow);
+}
+
+.icone{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem
+
+}
+.m-2{
+    margin: 0 2rem;
 }
 
 /*aside*/
@@ -91,7 +104,7 @@ aside ul .btn:hover {
 .main-container {
     grid-area: main;
     display: flex;
-    padding: 15rem 0 12rem 0;
+    padding: 13rem 0 12rem 0;
 }
 
 .main-container .card {
@@ -102,7 +115,7 @@ aside ul .btn:hover {
     display: flex;
     width: 870px;
     justify-content: space-around;
-    animation: myAnim 3s ease 0s 1 normal forwards;
+    animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
 .main-container .card h2 {
@@ -152,7 +165,7 @@ aside ul .btn:hover {
 }
 
 .main-container .card .card-skill .skill .bar-skill-progress-4 {
-    width: 10%;
+    width: 90%;
     height: 5px;
 }
 
@@ -178,7 +191,7 @@ aside ul .btn:hover {
 }
 
 .main-container .card .card-skill .skill .bar-skill .bar-skill-dot-4 {
-    left: calc(200px - 90% - 5px);
+    left: calc(200px - 10% - 5px);
 }
 
 .main-container .card .card-skill .skill h4 {
@@ -229,7 +242,7 @@ aside ul .btn:hover {
 @keyframes myAnim {
     0% {
         opacity: 0;
-        transform: translateX(500px);
+        transform: translateX(300px);
     }
     100% {
         opacity: 1;
